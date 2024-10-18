@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Tips</title>
+    <link rel="stylesheet" href="tech-tips.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Tech Tips</h1>
+        <input type="text" id="search-bar" placeholder="Search for tech tips..." onkeyup="searchFunction(event)">
+    </header>
+
+    <div class="container">
+
+        <nav>
+            <div class="button-container">
+                <button class="toc-button" onclick="showSection('resume')">Creating Resume</button>
+                <button class="toc-button" onclick="showSection('interview')">Interview Questions</button>
+                <button class="toc-button" onclick="showSection('technical')">Technical Round Prep</button>
+                <button class="toc-button" onclick="showSection('aptitude')">Aptitude</button>
+            </div>
+        </nav>
+
+        <div class="section" id="resume">
+            <h2 class="category">Creating a Resume</h2>
+            <div class="content-box">
+                <p>Here are some tips for creating an effective resume:</p>
+                <ul>
+                    <li>Keep it concise (1 page is ideal).</li>
+                    <li>Use bullet points for easy readability.</li>
+                    <li>Highlight your skills and experiences relevant to the job.</li>
+                    <li>Include measurable achievements.</li>
+                    <li>Tailor your resume for each application.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="interview">
+            <h2 class="category">Interview Questions</h2>
+            <div class="content-box">
+                <p>Select your role:</p>
+                <select id="role-select" onchange="showInterviewQuestions()">
+                    <option value="">-- Select a Role --</option>
+                    <option value="developer">Developer</option>
+                    <option value="devops">DevOps Engineer</option>
+                    <option value="networking">Network Engineer</option>
+                </select>
+                <div id="interview-questions"></div>
+            </div>
+        </div>
+
+        <div class="section" id="technical">
+            <h2 class="category">Technical Round Preparation</h2>
+            <div class="content-box">
+                <p>Commonly asked technical questions:</p>
+                <ul>
+                    <li>Explain the difference between TCP and UDP.</li>
+                    <li>What is the OSI model?</li>
+                    <li>How does a DNS work?</li>
+                    <li>What is the purpose of version control systems?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="aptitude">
+            <h2 class="category">Aptitude Questions</h2>
+            <div class="content-box">
+                <p>Select a base:</p>
+                <select id="base-select" onchange="showAptitudeQuestions()">
+                    <option value="">-- Select a Base --</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="logical">Logical Reasoning</option>
+                </select>
+                <div id="aptitude-questions"></div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="back-button" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        function searchFunction(event) {
+            const input = document.getElementById('search-bar');
+            if (event.key === 'Enter' && input.value) {
+                const query = encodeURIComponent(input.value);
+                window.open(`https://chatgpt.com/?q=${query}`, '_blank');
+            }
+        }
+
+        function goBack() {
+            window.location.href = 'exp.html'; // Go back to exp.html
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block'; // Show selected section
+        }
+
+        function showInterviewQuestions() {
+            const role = document.getElementById('role-select').value;
+            const questionsDiv = document.getElementById('interview-questions');
+            let questions = '';
+
+            switch (role) {
+                case 'developer':
+                    questions = '<p>Common Developer Interview Questions:</p><ul><li>Explain your experience with version control.</li><li>What is your favorite programming language and why?</li></ul>';
+                    break;
+                case 'devops':
+                    questions = '<p>Common DevOps Interview Questions:</p><ul><li>What tools do you use for CI/CD?</li><li>How do you manage cloud infrastructure?</li></ul>';
+                    break;
+                case 'networking':
+                    questions = '<p>Common Network Engineer Interview Questions:</p><ul><li>What is your experience with routing protocols?</li><li>How do you troubleshoot network issues?</li></ul>';
+                    break;
+                default:
+                    questions = '';
+            }
+            questionsDiv.innerHTML = questions;
+        }
+
+        function showAptitudeQuestions() {
+            const base = document.getElementById('base-select').value;
+            const questionsDiv = document.getElementById('aptitude-questions');
+            let questions = '';
+
+            switch (base) {
+                case 'mathematics':
+                    questions = '<p>Common Mathematics Questions:</p><ul><li>What is 15% of 200?</li><li>If 5x = 25, what is x?</li></ul>';
+                    break;
+                case 'logical':
+                    questions = '<p>Common Logical Reasoning Questions:</p><ul><li>If A is taller than B and B is taller than C, who is the tallest?</li><li>Find the next number in the series: 2, 4, 8, 16...</li></ul>';
+                    break;
+                default:
+                    questions = '';
+            }
+            questionsDiv.innerHTML = questions;
+        }
+    </script>
+
+</body>
+</html>

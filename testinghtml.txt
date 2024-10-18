@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECH and TOOL</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+  <style>
+    /* Basic styles for the search bar */
+    .search-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .search-bar {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .search-button:hover {
+      background-color: #357ae8;
+    }
+
+    /* Header and title styling */
+    header {
+      background-color: #4285F4; /* Google Blue */
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .logo-text {
+      font-size: 3em; /* Increased size for TECH AND TOOL */
+      font-weight: bold;
+    }
+
+    /* Button styling - equal size */
+    .thoughts-button, .custom-button {
+      background-color: #008CBA;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      width: 200px;  /* Fixed width */
+      height: 50px;  /* Fixed height */
+      line-height: 50px; /* Vertically center the text */
+      text-transform: uppercase;
+    }
+
+    .thoughts-button:hover, .custom-button:hover {
+      background-color: #005f73;
+    }
+
+    /* Flexbox container for buttons */
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;  /* Spacing between buttons */
+    }
+
+    /* Style the list with spacing */
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px; /* Add space between list items */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-text">TECH AND TOOL</div>
+    <p>Your go-to resource for learning about technology and tools.</p>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+      <input type="text" name="q" class="search-bar" placeholder="Search Google...">
+      <button type="submit" class="search-button">Search</button>
+    </form>
+  </div>
+
+  <!-- Content will go here -->
+  <main class="content">
+    <!-- Sections go here -->
+  </main>
+  
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#section1">Programming Languages</a></li>
+        <li><a href="#section2">Web Development</a></li>
+        <li><a href="#section3">Databases</a></li>
+        <li><a href="#section4">DevOps Tools</a></li>
+        <li><a href="#section5">Cloud Computing</a></li>
+        <li><a href="#section6">Networking</a></li>
+      </ul>
+
+      <!-- Button Container for all the buttons -->
+      <div class="button-container">
+        <!-- Add THOUGHTS button -->
+        <a href="thoughts.html" class="thoughts-button">THOUGHTS</a>
+        
+        <!-- Add the other custom buttons -->
+        <a href="did-you-know.html" class="custom-button">DID YOU KNOW?</a>
+        <a href="shortcuts.html" class="custom-button">SHORTCUTS</a>
+        <a href="tech-tips.html" class="custom-button">TECH TIPS</a>
+        <a href="smart-moves.html" class="custom-button">SMART MOVES</a> 
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="section1">
+        <h2>Programming Languages</h2>
+        <img src="https://wallpaperaccess.com/full/5673880.png" alt="Programming Languages" style="width:100%; max-width:900px; height:auto; display:block; margin: 0 auto;">
+
+        <p>Programming languages are the building blocks for software development. </p>
+	<p>They allow developers to communicate with computers in a way that the computer can understand and execute tasks.</p>
+	<p>There are several categories of programming languages:</p>
+                
+        <!-- Subheading for General Purpose Languages -->
+        <h3>General Purpose Languages</h3>
+        <p>These languages are versatile and can be used to build all kinds of software applications:</p>
+        <ul>
+          <li><strong>Python:</strong> Widely used for web development, data analysis, automation, and machine learning.</li>
+          <li><strong>Java:</strong> Known for its cross-platform capabilities and is commonly used for building enterprise-level applications.</li>
+          <li><strong>C#:</strong> A popular language for developing desktop applications and games, particularly on the Windows platform.</li>
+          <li><strong>JavaScript:</strong> The language of the web, used for creating interactive websites.</li>
+        </ul>
+
+        <!-- Subheading for Web Development Languages -->
+        <h3>Web Development Languages</h3>
+        <p>These languages are specifically designed for building websites and web applications:</p>
+        <ul>
+          <li><strong>HTML:</strong> The basic building block of the web, used to create the structure of web pages.</li>
+          <li><strong>CSS:</strong> Used for styling and laying out web pages.</li>
+          <li><strong>JavaScript:</strong> Adds interactivity and dynamic content to web pages.</li>
+          <li><strong>PHP:</strong> A server-side scripting language used to create dynamic web pages.</li>
+        </ul>
+
+        <p>Learn more on <a class="learn-button" href="https://www.youtube.com/c/TraversyMedia" target="_blank">Click here to learn</a></p>
+
+        <!-- Subheading for System Programming Languages -->
+        <h3>System Programming Languages</h3>
+        <p>These languages are used to create system-level software such as operating systems and hardware drivers:</p>
+        <ul>
+          <li><strong>C:</strong> A powerful language that provides low-level memory access, making it ideal for system programming.</li>
+          <li><strong>C++:</strong> An extension of C that includes object-oriented features, used in applications like video games and high-performance software.</li>
+          <li><strong>Rust:</strong> Known for its safety and performance, it's popular for system-level programming and concurrent applications.</li>
+        </ul>
+
+        <!-- Subheading for Scripting Languages -->
+        <h3>Scripting Languages</h3>
+        <p>These languages are often used for automating tasks or for quick prototyping:</p>
+        <ul>
+          <li><strong>Python:</strong> Besides being general-purpose, Python is widely used for scripting due to its simplicity.</li>
+          <li><strong>Bash:</strong> A Unix shell and command language used for automating repetitive tasks in Linux environments.</li>
+          <li><strong>Perl:</strong> A highly capable scripting language, often used for text manipulation.</li>
+        </ul>
+	
+	<!-- Add YouTube link -->
+        <p>Learn more on <a class="learn-button" href="https://www.youtube.com/c/programmingwithmosh" target="_blank">Click here to learn</a></p>
+      </section>
+
+        <!-- Conclusion for the Section -->
+        <p>Choosing the right programming language depends on the project requirements, performance needs, and platform compatibility. Each language has its strengths and weaknesses, and often, a combination of several languages is used to build complex applications.</p>
+      </section>
+
+      <section id="section2">
+        <h2>Web Development</h2>
+        <img src="https://wallpapercave.com/wp/wp6350578.jpg" alt="Web Development" style="width:100%; max-width:900px; height:auto; display:block; margin: 0 auto;">
+
+        <p>Web development involves building and maintaining websites. The following are key technologies used in web development:</p>
+
+        <!-- HTML -->
+        <h3>HTML (Hypertext Markup Language)</h3>
+        <ul>
+	<li>HTML is the standard markup language used to create the structure of web pages.</p> 
+        <li>It defines elements such as headings, paragraphs, images, links, and more.</p> 
+        <li>HTML forms the backbone of web content.</p>
+	</ul>
+
+        <!-- CSS -->
+        <h3>CSS (Cascading Style Sheets)</h3>
+        <ul>
+	<li>CSS is used to style and layout web pages.</p>
+        <li>CSS makes web pages visually appealing and responsive.</p>
+        <li>It controls the look and feel of the website, including colors, fonts, spacing, and positioning.</p>
+	</ul>
+
+        <!-- JavaScript -->
+        <h3>JavaScript</h3>
+        <ul>
+	<li>JavaScript is a scripting language that enables interactive features on web pages.</p>
+	<li>It makes web content change without reloading
+        </ul>
+
+	<!-- React -->
+        <h3>React</h3>
+        <ul>
+	<li>React is a popular JavaScript library for building user interfaces, especially for single-page applications.</p>
+        <li>It allows developers to create reusable UI components and efficiently update web pages.</p>
+	</ul>
+
+        <!-- Node.js -->
+        <h3>Node.js</h3>
+       <ul>
+	<li>Node.js is a runtime environment that allows JavaScript to be executed on the server side.</p>
+        <li>It is used to build fast, scalable server-side applications and enables full-stack JavaScript development.</p>
+	</ul>
+
+        <!-- Add YouTube link -->
+        <p>Learn more on <a class="learn-button" href="https://www.youtube.com/c/TraversyMedia" target="_blank">Click here to learn</a></p>
+      </section>
+
+      <section id="section3">
+        <h2>Databases</h2>
+        <img src="https://i.ytimg.com/vi/Nz_lU0o3yw8/maxresdefault.jpg" alt="Database" style="width:100%; max-width:900px; height:auto; display:block; margin: 0 auto;">
+
+        <p>Here are some popular databases used in modern web development:</p>
+        
+        <!-- MySQL -->
+        <h3>MySQL</h3>
+        <ul>
+	<li>Open-source relational database management system.</p>
+        <li>Commonly used for web applications, supporting SQL for data.</p>
+        </ul>
+
+        <!-- PostgreSQL -->
+        <h3>PostgreSQL</h3>
+        <ul>
+	<li>Open-source object-relational database known for integrity.</p>
+        <li>Supports complex queries and works with JSON data.</p>
+        </ul>
+
+        <!-- MongoDB -->
+        <h3>MongoDB</h3>
+        <ul>
+	<li>NoSQL database storing data in a flexible, JSON-like format.</p>
+        <li>Ideal for applications needing fast iteration and scalability.</p>
+        </ul>
+
+        <!-- SQLite -->
+        <h3>SQLite</h3>
+	<ul>
+        <li>Lightweight, serverless SQL database engine used in apps.</p>
+        <li>Stores data in a single file, easy to use without a server.</p>
+        </ul>
+
+        <!-- Oracle -->
+        <h3>Oracle</h3>
+        <ul>
+	<li>Enterprise-grade database used in large organizations.</p>
+        <li>Known for scalability, security, and supporting transactions.</p>
+	</ul>
+
+        <!-- Add YouTube link -->
+        <p>Learn more on <a class="learn-button" href="https://www.youtube.com/c/TheCodingTrain" target="_blank">Click here to learn</a></p>
+      </section>
+
+      <section id="section4">
+        <h2>DevOps Tools</h2>
+        <img src="https://static.vecteezy.com/system/resources/previews/008/902/912/original/devops-banner-concept-has-8-steps-to-analyze-such-as-plan-code-build-operate-deploy-test-monitor-and-release-for-software-development-and-information-technology-operations-infographic-vector.jpg" alt="DevOps Tools" style="width:100%; max-width:900px; height:auto; display:block; margin: 0 auto;">  
+        <p>Here are some popular DevOps tools used in modern software development and infrastructure management:</p>
+        
+	<!-- Docker -->
+	<h3>Docker</h3>
+	<ul>
+	  <li>A platform for creating and managing containers that isolate applications.</li>
+	  <li>Ensures apps run consistently across different environments.</li>
+	</ul>
+
+	<!-- Kubernetes -->
+	<h3>Kubernetes</h3>
+	<ul>
+	  <li>Orchestrates and manages containerized applications.</li>
+	  <li>Automates scaling, deployment, and management of containers.</li>
+	</ul>
+	
+	<!-- Jenkins -->
+	<h3>Jenkins</h3>
+	<ul>
+	  <li>Automates building, testing, and deploying code.</li>
+	  <li>Helps streamline the development process through continuous integration.</li>
+	</ul>
+	
+	<!-- Git -->
+	<h3>Git</h3>
+	<ul>
+  	<li>Tracks changes in source code and manages versions.</li>
+  	<li>Enables collaboration and branching, making team development easier.</li>
+	</ul>
+
+	<!-- Terraform -->
+	<h3>Terraform</h3>
+	<ul>
+	  <li>Automates cloud infrastructure management with code.</li>
+	  <li>Defines infrastructure resources using configuration files.</li>
+	</ul>
+
+        <!-- Add YouTube link -->
+        <p>Learn more on <a class="learn-button" href="https://www.youtube.com/c/DevOpsDirective" target="_blank">Click here to learn</a></p>
+      </section>
+
+      <section id="section5">
+        <h2>Cloud Computing</h2>
+        <img src="https://miro.medium.com/v2/resize:fit:750/1*7P7fEqLfruwY0NlVzWzKrw.png" alt="Cloud Computing" style="width:100%; max-width:900px; height:auto; display:block; margin: 0 auto;">
+        
+        <p>Cloud computing provides on-demand access to computing resources over the internet. Here are some popular cloud service providers:</p>
+        
+        <!-- AWS -->
+	<h3>AWS (Amazon Web Services)</h3>
+	<ul>
+	  <li>A comprehensive cloud platform offering over 200 fully featured services.</li>
+	  <li>Known for its scalability, reliability, and extensive global infrastructure.</li>
+	</ul>
+
+	<!-- Microsoft Azure -->
+	<h3>Microsoft Azure</h3>
+	<ul>
+	  <li>A cloud computing service by Microsoft for building and managing applications.</li>
+	  <li>Offers a range of tools and services for developers and enterprises.</li>
+	</ul>
+	
+	<!-- Google Cloud Platform -->
+	<h3>Google Cloud Platform</h3>
+	<ul>
+	  <li>A suite of cloud services running on the same infrastructure Google uses.</li>
+	  <li>Offers powerful data analytics and machine learning capabilities.</li>
+	</ul>
+
+	<!-- IBM Cloud -->
+	<h3>IBM Cloud</h3>
+	<ul>
+	  <li>Combines PaaS with IaaS for comprehensive cloud computing solutions.</li>
+	  <li>Focused on hybrid cloud solutions and enterprise-level applications.</li>
+	</ul>
+
+	<!-- DigitalOcean -->
+	<h3>DigitalOcean</h3>
+	<ul>
+	  <li>A cloud infrastructure provider designed for developers.</li>
+	  <li>Known for its user-friendly interface and fast deployment of applications.</li>
+	</ul>
+
+        <!-- Add YouTube link -->
+        <p>Learn more on <a class="learn-button" href="https://www.youtube.com/c/AmazonWebServices" target="_blank">Click here to learn</a></p>
+      </section>
+
+      <!-- Networking Section -->
+      <section id="section6">
+        <h2>Networking</h2>
+        <img src="https://www.lifewire.com/thmb/FmeKYLjqWRfxgCFYbz1hDqnTAiE=/2202x1361/filters:fill(auto,1)/GettyImages-730133317-5b2b315dba61770054a1497f.jpg" alt="Networking" style="width:100%; max-width:900px; height:auto; display:block; margin: 0 auto;">
+        <p>Networking refers to connecting computers and devices to share resources and communicate. Here are some key concepts:</p>
+        
+        <!-- IP Addressing -->
+        <h3>IP Addressing</h3>
+        <ul>
+	<li>Assigns a unique identifier to each device on a network.</p>
+        <li>Enables devices to communicate with each other.</p>
+        </ul>
+
+        <!-- Subnets -->
+        <h3>Subnets</h3>
+        <ul>
+	<li>Divides a larger network into smaller, manageable parts.</p>
+        <li>Improves performance and enhances security.</p>
+        </ul>
+
+        <!-- Routers -->
+        <h3>Routers</h3>
+	<ul>
+        <li>Forward data packets between networks.</p>
+        <li>Directs traffic to ensure data reaches its destination.</p>
+        </ul>
+
+        <!-- Switches -->
+        <h3>Switches</h3>
+        <ul>
+    	<li>Connect devices within a single network.<br>
+    	<li>Enables communication and resource sharing efficiently.
+  	</li>
+	</ul>
+
+        
+        <!-- Firewalls -->
+        <h3>Firewalls</h3>
+        <ul>
+	<li>Monitor and control network traffic based on security rules.<br>
+        <li>Protects networks from unauthorized access.</p>
+	</li>
+	</ul.
+
+        <!-- Add YouTube link -->
+        <p>Learn more on <a class="learn-button" href="https://www.youtube.com/c/NetworkChuck" target="_blank">Click here to learn</a></p>
+      </section>
+    </main>
+  </div>
+  
+  <footer>
+    <p>© 2024 Technology and Tools Wiki. All rights reserved.</p>
+  </footer>
+</body>
+</html>

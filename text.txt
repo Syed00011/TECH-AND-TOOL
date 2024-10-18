@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts - Tech Concepts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Merriweather', serif; /* Newspaper-style font */
+            background-color: #f0f0f0; /* Light grey background */
+            color: #333; /* Dark grey text */
+            line-height: 1.6; /* Improved readability */
+            padding: 20px; /* Padding around the body */
+        }
+
+        h1 {
+            color: #4285F4; /* Blue for main title */
+            font-size: 3em; /* Larger main title size */
+            text-align: center; /* Center align title */
+            margin-bottom: 20px; /* Space below title */
+        }
+
+        h2 {
+            color: #0056b3; /* Dark blue for subheadings */
+            font-size: 2em; /* Size for subheadings */
+            margin-top: 20px; /* Space above each subheading */
+        }
+
+        .content {
+            position: relative; /* Enable positioning of child elements */
+            max-width: 800px; /* Limit width of content */
+            margin: auto; /* Center the content */
+            padding: 20px; /* Padding inside the content */
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        img {
+            width: 100%; /* Set width to 100% for responsiveness */
+            height: 200px; /* Fixed height for all images */
+            object-fit: cover; /* Cover to maintain aspect ratio */
+            margin: 15px 0; /* Space around images */
+            border: 2px solid #ddd; /* Border for images */
+            border-radius: 5px; /* Rounded corners for images */
+        }
+
+        p {
+            font-size: 1.1em; /* Size for paragraphs */
+            color: #555; /* Softer grey for paragraph text */
+            margin-bottom: 20px; /* Space below each paragraph */
+            padding: 10px; /* Padding for the paragraph */
+            background-color: #f9f9f9; /* Light grey background for paragraphs */
+            border-left: 4px solid #4285F4; /* Left border for emphasis */
+        }
+
+        .back-button {
+            background-color: #FF5733; /* Bright color for back button */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding for button */
+            text-align: center; /* Center text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Inline-block for layout */
+            margin-top: 20px; /* Space above the button */
+            border-radius: 5px; /* Rounded corners for button */
+            font-size: 16px; /* Font size for button */
+            transition: background-color 0.3s ease; /* Transition effect */
+        }
+
+        .back-button:hover {
+            background-color: #C70039; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>THOUGHTS</h1>
+
+    <div class="content">
+        <!-- Subtopic: How Does Your Call Connect? -->
+        <h2>How Does Your Call Connect When You Dial?</h2>
+        <p>When you dial a number on your phone, several steps occur in the background to connect your call. Here’s a simplified breakdown:</p>
+        
+        <h3>1. Dialing the Number</h3>
+        <p>When you press the call button, your phone sends the dialed number to the mobile network provider. This process begins the call setup.</p>
+        <img src="https://thumbs.dreamstime.com/b/dialing-cell-phone-6242060.jpg" alt="Dialing the Number">
+
+        <h3>2. Signal Transmission</h3>
+        <p>Your phone sends a signal to the nearest cell tower. This signal travels wirelessly through radio waves.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Signal Transmission"> <!-- Replace with actual image URL -->
+
+        <h3>3. Routing the Call</h3>
+        <p>The cell tower forwards the signal to the Mobile Switching Center (MSC), which routes the call based on the dialed number.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Routing the Call"> <!-- Replace with actual image URL -->
+
+        <h3>4. Connecting the Call</h3>
+        <p>Once the call reaches the recipient's mobile network, the MSC checks if the phone is available to receive the call.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Connecting the Call"> <!-- Replace with actual image URL -->
+
+        <h3>5. Maintaining the Connection</h3>
+        <p>During the call, the MSC keeps track of the call duration and manages the communication between both parties.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Maintaining the Connection"> <!-- Replace with actual image URL -->
+
+        <!-- Subtopic: How Does the Computer Get Power? -->
+        <h2>How Does the Computer Get Power?</h2>
+        <p>Your computer receives power through a process that starts from the power outlet in your home:</p>
+
+        <h3>1. Power Source</h3>
+        <p>Electricity flows from the power grid through the power outlet, into the power supply unit (PSU) of your computer.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Power Source"> <!-- Replace with actual image URL -->
+
+        <h3>2. Power Supply Unit</h3>
+        <p>The PSU converts the high voltage AC (Alternating Current) from the outlet into low voltage DC (Direct Current) that the computer can use.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Power Supply Unit"> <!-- Replace with actual image URL -->
+
+        <h3>3. Power Distribution</h3>
+        <p>Power is then distributed to various components of the computer, including the motherboard, CPU, RAM, and storage devices.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Power Distribution"> <!-- Replace with actual image URL -->
+
+        <h3>4. Ensuring Stability</h3>
+        <p>The computer has various protection circuits to ensure a stable and reliable power supply, preventing damage from power surges.</p>
+        <img src="https://example.com/path_to_your_image.jpg" alt="Ensuring Stability"> <!-- Replace with actual image URL -->
+
+        <!-- Back Button -->
+        <a href="exp.html" class="back-button">Go Back</a>
+    </div>
+
+</body>
+</html>

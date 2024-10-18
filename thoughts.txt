@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts - Tech Concepts</title>
+    <link rel="stylesheet" href="thoughts.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ever Wonder How Everything Works?</h1>
+        <input type="text" id="search-bar" placeholder="Ask me anything about tech..." onkeyup="searchFunction(event)">
+    </header>
+
+    <div class="container">
+
+        <nav>
+            <div class="button-container">
+                <button class="toc-button" onclick="showSection('computer')">Computer</button>
+                <button class="toc-button" onclick="showSection('networking')">Networking</button>
+                <button class="toc-button" onclick="showSection('programming')">Programming</button>
+                <button class="toc-button" onclick="showSection('cloud')">Cloud</button>
+                <button class="toc-button" onclick="showSection('electronics')">Electronics</button>
+            </div>
+        </nav>
+
+      <div class="section" id="computer">
+    <h2 class="category">Computer</h2>
+    
+    <div class="content-box long">
+    <h3>How does my computer communicate with other systems?</h3>
+    
+    <h4>1. Understanding Data Communication</h4>
+    <p>Data communication refers to the exchange of data between two or more devices. It allows computers to share information, access resources, and connect with other networks.</p>
+    <img src="path/to/data-communication-diagram.png" alt="Data Communication Diagram" class="content-image">
+
+    <h4>2. Using Network Protocols</h4>
+    <p>Protocols are standardized rules that determine how data is transmitted over a network. Common protocols include TCP/IP and HTTP/HTTPS.</p>
+    <img src="path/to/network-protocols-diagram.png" alt="Network Protocols Diagram" class="content-image">
+
+    <h4>3. Establishing a Connection</h4>
+    <p>Connection types include wired (Ethernet) and wireless (Wi-Fi). The computer sends a request to connect to another device.</p>
+    <img src="path/to/connection-types-diagram.png" alt="Connection Types Diagram" class="content-image">
+
+    <h4>4. Data Transmission</h4>
+    <p>Once connected, the computer sends data packets over the network. Each packet contains source and destination IP addresses.</p>
+    <img src="path/to/data-transmission-diagram.png" alt="Data Transmission Diagram" class="content-image">
+
+    <h4>5. Ensuring Data Integrity</h4>
+    <p>Protocols like TCP check for errors in data packets and request retransmission if necessary. The receiving device sends an acknowledgment back to confirm correct receipt.</p>
+    <img src="path/to/data-integrity-diagram.png" alt="Data Integrity Diagram" class="content-image">
+
+    <h4>6. Communication Applications</h4>
+    <p>This process supports various applications such as web browsing, email, file sharing, and online gaming.</p>
+    <img src="path/to/communication-applications-diagram.png" alt="Communication Applications Diagram" class="content-image">
+</div>
+
+    <div class="content-box long">
+        <h3>How does my computer get power?</h3>
+        <img src="path/to/power-flow-diagram.png" alt="Power Flow Diagram" class="content-image">
+        <p>Your computer receives power through a power supply unit that converts electricity from the wall outlet into usable power...</p>
+    </div>
+
+    <div class="content-box long">
+        <h3>What happens when I press a key on my keyboard?</h3>
+        <img src="path/to/keyboard-input-flow-diagram.png" alt="Keyboard Input Flow Diagram" class="content-image">
+        <p>When you press a key, it sends a signal to the computer, which processes the input and displays it on the monitor...</p>
+    </div>
+    
+    <!-- New Content Box -->
+    <div class="content-box long">
+        <h3>How does a computer store data?</h3>
+        <img src="path/to/data-storage-flow-diagram.png" alt="Data Storage Flow Diagram" class="content-image">
+        <p>A computer stores data using various storage devices, including hard drives, SSDs, and memory. Data is written in binary format, and storage technologies determine how quickly and reliably data can be accessed...</p>
+    </div>
+</div>
+
+        <div class="section" id="networking">
+            <h2 class="category">Networking</h2>
+            <div class="content-box long">
+                <h3>How does a call connect when you dial?</h3>
+                <p>When you dial a number, your phone sends the dialed number to the mobile network provider, which connects your call through several steps...</p>
+            </div>
+
+            <div class="content-box long">
+                <h3>What is a network protocol?</h3>
+                <p>A network protocol is a set of rules that allows devices to communicate with each other on a network...</p>
+            </div>
+
+            <div class="content-box long">
+                <h3>How do routers work?</h3>
+                <p>Routers manage data traffic between different networks by forwarding data packets to their intended IP addresses...</p>
+            </div>
+        </div>
+
+        <div class="section" id="programming">
+            <h2 class="category">Programming</h2>
+            <div class="content-box long">
+                <h3>What is a programming language?</h3>
+                <p>A programming language is a formal set of instructions that can be used to produce various kinds of output, including software applications...</p>
+            </div>
+
+            <div class="content-box long">
+                <h3>Why are coding standards important?</h3>
+                <p>Coding standards help maintain consistency in code, making it easier to read and maintain, and promoting best practices among developers...</p>
+            </div>
+
+            <div class="content-box long">
+                <h3>How does version control work?</h3>
+                <p>Version control systems track changes in files over time, allowing you to revert to previous versions and collaborate effectively with others...</p>
+            </div>
+        </div>
+
+        <div class="section" id="cloud">
+            <h2 class="category">Cloud</h2>
+            <div class="content-box long">
+                <h3>What is cloud computing?</h3>
+                <p>Cloud computing is the delivery of various services over the internet, including data storage, processing power, and applications...</p>
+            </div>
+
+            <div class="content-box long">
+                <h3>How does cloud storage work?</h3>
+                <p>Cloud storage allows you to store data on remote servers accessed via the internet instead of on local computers or devices...</p>
+            </div>
+        </div>
+
+        <div class="section" id="electronics">
+            <h2 class="category">Electronics</h2>
+            <div class="content-box long">
+                <h3>What is a microcontroller?</h3>
+                <p>A microcontroller is a compact integrated circuit designed to govern a specific operation in an embedded system...</p>
+            </div>
+
+            <div class="content-box long">
+                <h3>How do capacitors work?</h3>
+                <p>Capacitors store and release electrical energy in a circuit, acting as temporary batteries...</p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="back-button" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        function searchFunction(event) {
+            const input = document.getElementById('search-bar');
+            if (event.key === 'Enter' && input.value) {
+                const query = encodeURIComponent(input.value);
+                window.open(`https://chatgpt.com/?q=${query}`, '_blank');
+            }
+        }
+
+        function goBack() {
+            window.location.href = 'exp.html'; // Go back to exp.html
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block'; // Show selected section
+        }
+    </script>
+
+</body>
+</html>
