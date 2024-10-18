@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did You Know? - Tech Facts</title>
+    <link rel="stylesheet" href="did-you-know.css"> <!-- Link to external CSS -->
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Classic newspaper font */
+            background-color: #f0f0f0; /* Light grey background to simulate paper */
+            color: #333; /* Dark grey text */
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            color: #000; /* Black for headlines */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            column-count: 2; /* Two columns for newspaper feel */
+            column-gap: 40px; /* Gap between columns */
+        }
+
+        .article {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: 2px solid #ccc;
+            break-inside: avoid; /* Prevent articles from breaking across columns */
+        }
+
+        .article h2 {
+            font-size: 1.8em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .article p {
+            line-height: 1.6;
+            font-size: 1.2em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .caption {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .back-button {
+            background-color: #FF5733;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            background-color: #C70039;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Did You Know?</h1>
+        <p>Fascinating Tech Facts That Will Surprise You!</p>
+    </header>
+
+    <div class="container">
+        <!-- Fact 1 -->
+        <div class="article">
+            <h2> The First Computer Virus Was Created in 1983</h2>
+            <p>Did you know that the first computer virus was created by a 15-year-old student? It was named the "Elk Cloner" and infected Apple II systems through floppy disks.</p>
+            <img src="https://as2.ftcdn.net/v2/jpg/02/16/26/21/1000_F_216262123_P9mDwiniMZnzDAH4I41uq1hCdsZxccsr.jpg" alt="First Computer Virus Image">
+            <p class="caption">The first computer virus was created as a prank and could display a message on infected computers.</p>
+        </div>
+
+        <!-- Fact 2 -->
+        <div class="article">
+            <h2> The First 1 GB Hard Drive Was Released in 1980</h2>
+            <p>The first 1 GB hard drive was introduced by IBM in 1980. It weighed over 500 pounds and cost around $40,000. Today, we have hard drives with terabytes of storage, costing a fraction of that price.</p>
+            <img src="https://th.bing.com/th/id/R.dabe7a5b4aa67c8bc72bfa66882c0131?rik=J7tORdN3Tm9Vsg&riu=http%3a%2f%2fwww.marcofolio.net%2fimages%2fstories%2ffun%2fother%2fhistory%2f1_gb.jpg&ehk=oq9K9m30EKQnGX7b0rT1eeibiU4h3f2dODgzLwXgjaw%3d&risl=&pid=ImgRaw&r=0" alt="First 1 GB Hard Drive Image">
+            <p class="caption">IBM's first 1 GB hard drive weighed as much as a refrigerator!</p>
+        </div>
+
+        <!-- Fact 3 -->
+        <div class="article">
+            <h2> There Are Over 700 Different Programming Languages</h2>
+            <p>Yes, there are more than 700 programming languages in use today, including Python, Java, JavaScript, C++, and Swift.</p>
+            <img src="https://th.bing.com/th/id/OIP.vAZV-CCrB_A2ZooKeOEf4AHaEp?rs=1&pid=ImgDetMain" alt="Programming Languages">
+            <p class="caption">From Python to Kotlin, there’s a programming language for every kind of developer!</p>
+        </div>
+
+        <!-- Fact 4 -->
+        <div class="article">
+            <h2> Artificial Intelligence is Changing the World</h2>
+            <p>Artificial Intelligence (AI) is revolutionizing various industries by enabling machines to learn from data, make decisions, and even perform tasks that typically require human intelligence.</p>
+            <img src="https://cdn.pixabay.com/photo/2023/05/07/07/03/ai-generated-7975810_1280.jpg" alt="Artificial Intelligence">
+            <p class="caption">AI is making significant advancements in numerous fields.</p>
+        </div>
+
+        <!-- Fact 5 -->
+        <div class="article">
+            <h2> The First Website is Still Live</h2>
+            <p>The first website ever created was launched on August 6, 1991, by Tim Berners-Lee, the inventor of the World Wide Web. It is still live today!</p>
+            <img src="https://th.bing.com/th/id/OIP.IJgeCd9UuMdzy9P7BmsC3AHaEg?rs=1&pid=ImgDetMain" alt="First Website">
+            <p class="caption">The first website is a testament to the beginning of the World Wide Web.</p>
+        </div>
+
+        <!-- Fact 6 -->
+        <div class="article">
+            <h2> The Term "Bug" Comes from an Actual Insect</h2>
+            <p>The term "bug" to describe a computer error dates back to 1947 when Grace Hopper found a moth causing problems in the Mark II computer at Harvard University.</p>
+            <img src="https://th.bing.com/th/id/R.30b762702a7ce9c20ffcf2cb7fe252a7?rik=V2jwySw8XwoI0w&riu=http%3a%2f%2fwww.poorwilliam.net%2fpix%2fcomputer-harvard-ibm-mark1.jpg&ehk=SAkkCffZuXyZBrWF%2fuAKo%2fZc2D3oiLpAXRvM01cUQyY%3d&risl=&pid=ImgRaw&r=0" alt="Grace Hopper">
+            <p class="caption">Grace Hopper famously documented the first computer bug.</p>
+        </div>
+
+        <!-- Fact 7 -->
+        <div class="article">
+            <h2> The Magic of Quantum Computers</h2>
+            <p>Quantum computers use the principles of quantum mechanics to perform calculations at unprecedented speeds, solving complex problems that classical computers cannot.</p>
+            <img src="https://s.yimg.com/os/creatr-uploaded-images/2021-01/8ca1aa50-6246-11eb-afef-959314e514b9" alt="Quantum Computer">
+            <p class="caption">IBM's quantum computer represents the cutting edge of technology.</p>
+        </div>
+
+        <!-- Back Button -->
+        <a href="exp.html" class="back-button">Go Back</a>
+
+    </div>
+
+</body>
+</html>

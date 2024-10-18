@@ -1,0 +1,187 @@
+/* Basic styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Header styles */
+header {
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-text {
+    font-size: 3em; /* Larger font size for the title */
+    font-weight: bold;
+}
+
+/* Basic styles for the search bar */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+}
+
+/* Main Layout */
+.container {
+    display: flex; /* Flexbox for sidebar and main content */
+    margin-top: 20px; /* Margin above the container */
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 0 0 250px; /* Fixed width for sidebar */
+    background-color: #f8f9fa; /* Light background for sidebar */
+    padding: 20px;
+    margin-right: 20px; /* Space between sidebar and content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sidebar h2 {
+    font-size: 1.5em; /* Size of sidebar heading */
+    margin-bottom: 10px; /* Space below heading */
+    color: black; /* Set color of heading to black */
+}
+
+/* Styling for the sidebar list without bullet points */
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Increased margin for list items for more space */
+    border-bottom: 2px solid #ccc; /* Add border below each main topic */
+    padding-bottom: 10px; /* Space between text and border */
+}
+
+/* Link styles */
+.sidebar ul li a {
+    color: black; /* Change link color to black */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the links bold */
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Content styles */
+.content {
+    flex: 1; /* Take remaining space for content */
+    padding: 20px; /* Padding in content area */
+    background-color: white; /* White background for content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.content h2 {
+    color: #333; /* Darker color for section headings */
+}
+
+/* Image styles */
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display for images */
+    margin: 0 auto 20px; /* Center images with margin */
+}
+
+/* Button styles */
+.learn-button, .thoughts-button, .custom-button {
+    background-color: #008CBA; /* Blue color */
+    color: white;
+    padding: 15px 30px; /* Padding around the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Font size for uniformity */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+    width: 100%; /* Full width for uniformity */
+    max-width: 200px; /* Maximum width for the button */
+    line-height: 1.5; /* Center text vertically */
+    font-weight: bold; /* Ensure all buttons have bold text */
+}
+
+.learn-button:hover, .thoughts-button:hover, .custom-button:hover {
+    background-color: #005f73; /* Darker blue on hover */
+}
+
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Centered text in footer */
+    padding: 10px; /* Padding in footer */
+    background-color: #4285F4; /* Google Blue */
+    color: white; /* White text color */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Button styles for custom buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Go Back Button Styles */
+.go-back-button {
+    display: inline-block; /* Block-level for button */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #FF5733; /* Go back button color */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin: 20px 0; /* Space around button */
+    font-size: 16px; /* Font size */
+}
+
+.go-back-button:hover {
+    background-color: #C70039; /* Darker shade on hover */
+}
+.learn-button {
+    background-color: #008CBA; /* Blue color */
+    color: white;
+    padding: 8px 15px; /* Reduced padding for a smaller button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px; /* Space above the button */
+    width: auto; /* Automatically adjust width based on content */
+}

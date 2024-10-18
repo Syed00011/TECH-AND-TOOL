@@ -1,0 +1,117 @@
+/* Body styles */
+body {
+    font-family: 'Merriweather', serif; /* Classic newspaper font */
+    background-color: #f4f4f4; /* Light grey background to simulate paper */
+    color: #333; /* Dark grey text */
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color: #FF5733; /* Bright orange for the main headline */
+    font-size: 3em; /* Larger main title */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #007BFF; /* Bright blue for section headings */
+    font-size: 2em; /* Increased font size for section headings */
+    text-transform: uppercase;
+    border-bottom: 2px solid #007BFF; /* Blue underline for section headings */
+    padding-bottom: 5px; /* Space between heading and underline */
+}
+
+/* Paragraph styles */
+p {
+    color: #555; /* Softer grey text for readability */
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the main content area */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the container */
+    column-count: 2; /* Two columns for newspaper feel */
+    column-gap: 40px; /* Gap between columns */
+}
+
+/* Article styles */
+.article {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc; /* Light grey border for article separation */
+    border-radius: 8px; /* Rounded corners for articles */
+    background-color: #f9f9f9; /* Light grey background for articles */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Article hover effect */
+.article:hover {
+    background-color: #e0f7fa; /* Light blue background on hover */
+}
+
+/* Article heading styles */
+.article h2 {
+    color: #007BFF; /* Consistent bright blue for subheadings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border: 2px solid #007BFF; /* Blue border around images */
+    border-radius: 5px; /* Rounded corners for images */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Scale image slightly on hover */
+}
+
+/* Caption styles */
+.caption {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-top: -10px;
+    font-style: italic; /* Italics for captions */
+}
+
+/* Back button styles */
+.back-button {
+    background-color: #FF5733; /* Bright orange back button */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.back-button:hover {
+    background-color: #C70039; /* Darker red on hover */
+}
+
+/* Highlight class for important facts */
+.highlight {
+    background-color: #007BFF; /* Bright blue highlight */
+    color: white; /* White text for highlight */
+    padding: 5px 10px; /* Padding for the highlight */
+    border-radius: 3px; /* Rounded corners for highlights */
+    font-weight: bold; /* Bold text for emphasis */
+}
