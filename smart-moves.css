@@ -40,12 +40,13 @@ h1 {
 }
 
 button {
-    background-color: #ff5733; /* Red color for back button */
+    background-color: #ff5733; /* Red color for buttons */
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 18px;
+    margin: 5px; /* Added margin between buttons */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
