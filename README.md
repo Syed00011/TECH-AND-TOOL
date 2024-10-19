@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Learning Platform - README</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS if needed -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
