@@ -22,13 +22,18 @@
 
     <div class="navigation">
         <button onclick="goBack()">Go Back</button>
+        <button onclick="sendFeedback()">Give Feedback</button>
     </div>
 
     <script>
         function goBack() {
             window.location.href = 'exp.html'; // Go back to exp.html
         }
+
+        function sendFeedback() {
+            window.location.href = 'mailto:syedshadab4962@gmail.com?subject=Feedback on Smart Moves&body=Please provide your feedback here.';
+        }
     </script>
-    
+
 </body>
 </html>
