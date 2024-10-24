@@ -1,0 +1,6 @@
+version: '3.0'
+services: 
+  httpd-server1:
+    build: .
+    ports:
+      - 89:80
